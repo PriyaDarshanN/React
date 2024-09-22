@@ -7,13 +7,31 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <div style={{background: "linear-gradient(to right, #fceabb, #ff5ccd )"}}>
+    <div >
+      
       <Navbar />
-      <div style={{display:"flex",justifyContent:"space-around",gap:"0px"}}>
-      <HeroSection />
-      <Main>
-      </Main>
+      <div style={{background: "linear-gradient(to right, #fceabb, #ff5ccd )",
+        display:"flex",
+        justifyContent:"space-around",
+        height:"590px"}}>
+        <HeroSection />
+        <Main/>
       </div>
+      <div style={{
+          height: "20px",
+          background: "transparent"}}>
+      </div>
+      <div style={{background: "linear-gradient(to right, #fceabb, #ff5ccd )",
+        display:"flex",
+        justifyContent:"space-around",
+        height:"800px",
+        }}>
+      <Testimonials/>
+      <imagepart2/>
+      </div>
+      
+      
+      
       <Footer />
     </div>
   );
