@@ -1,0 +1,36 @@
+Componenets can be created in 2 approachs
+1.Functional component(rfc)
+2.Class componenent(rcc-shortcut)
+
+Export component in 2 ways
+1.Default export - you can export only one class or functional component
+2.Named export - you can export multiple functions
+
+Adding the style:
+------------------
+1.Create an object and give the values as key-value pair.Add the object reference to style attribute within {}
+2.Add object directly inside the style attribute
+3.Create a separate css file and add styles in that and import that css file in the required component
+->to add js code inside the html file we can use {}
+->style attribute is an object
+object is from js
+style is html element
+in order to use js in html we use {}
+
+->ex:(1)
+const myStyle={
+        color:"white",
+        backgroundColor:"black"
+    }
+
+  <h1 style={myStyle}>Hello {name.toUpperCase()}</h1>
+->ex(2)
+<h1 style={{
+        color:"white",
+        backgroundColor:"red"
+    }}>Hello {name.toUpperCase()}</h1>
+---------------------------------------------------------------
+render()
+in react we don not call loading a document we use the component has been rendered
+based on condition if the output is displayed then it is conditional rendering.
+

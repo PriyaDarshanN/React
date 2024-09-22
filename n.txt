@@ -1,0 +1,95 @@
+Steps to create a react application
+------------------------------------
+1.install nodejs
+2.open cmd and check node version
+node -v
+3.create new folderin desktop
+4.open new folder in vscode
+5.open new terminal in vscode
+6.type command as
+npx create-react-app folder_name
+happy hacking
+7.cd foldername
+8.npm start
+
+Folder structure:
+-----------------
+imp folders(1-3)
+1.node modules
+to create react app by default there are more dependencies 
+all the dependencies will be present here
+2.public folder
+it is a staic folder returned from the server
+3.src folder
+where we will be writing hte code in it by using css and js file
+imp files are index.js and app.js
+
+Relationship in folder str
+----------------------------
+index.html and index.js and app.js
+
+JSX(javascript xml)
+--------------------
+-it is a syntax extension for javascript commonly used in react
+-it similarly looks like html but it allows you to write html like elements within js code 
+-it is not valid javascript but it allows into regular javascript
+how? with the help of tool like babel it will compile jsx before being executed in the browser
+
+rules to write jsx code:
+-----------------------
+1.jsx code should always return in lower case
+2.jsx must return a single parent element
+3.the parent should be one for all elements such as <div>,<section>,<article>
+we can enclose the jsx code inside react fragments - to avoid extra div error
+<React.fragment></React.fragment>
+	or
+<></>
+4.jsx elements must be properly closed
+every tag must be self closed or have a closing tag(just like xml or xhtml)
+//incorrect
+<img src="">
+
+//correct
+<img src="" />
+	or
+<img src=""></img>
+
+5.jsx attributes should be used in camelcase
+html attributes like class and onclick must be written in camelcase
+ex:class becomes className
+onclick becomes onClick
+
+6.javascript expressions in jsx must be enclosed in curly brackets {} but cannot declare variable in jsx.
+ex: function App() {
+  let a="Sonika"
+  return (
+   <> 
+   <div>
+    <h1>{a}</h1>
+    <h2>hello world</h2>
+   </div>
+   </>
+  );
+}
+
+7.jsx tags can have children .we can nest elements in jsx tags and they will render as a part of tree structure
+
+8.jsx supports comments
+ctrl+/
+ex: {/* <h2>hello world</h2> */}
+
+9.jsx attributes can accept the javascript expression using {}
+
+ex:function App() {
+  let a="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bWuKCz4gtbALIq4CBCVK47PHCGoSFg1Fzg&s"
+  return (
+   <> 
+   <div>
+    <img src={a}></img>
+   </div>
+   </>
+  );
+}
+
+
+
